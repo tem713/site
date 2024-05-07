@@ -11,64 +11,45 @@
             padding: 0;
         }
 
-        header {
+       .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
             background-color: #333;
             color: #fff;
             padding: 1rem;
             text-align: center;
+            width: 150px;
         }
 
-        nav {
-            background-color: #555;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        nav a {
+       .menu a {
             color: #fff;
             text-decoration: none;
-            margin: 0 1rem;
+            display: block;
+            padding: 0.5rem;
+            border-bottom: 1px solid #444;
         }
 
-        main {
+       .menu a:hover {
+            background-color: #555;
+        }
+
+       .content {
+            margin-left: 150px;
             padding: 2rem;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-            margin-top: 1rem;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Study IT Manager</h1>
-    </header>
-    <nav>
-        <a href="#mathematics">Mathematics</a>
-        <a href="#organization">Organization</a>
-        <a href="#python">Python</a>
-        <a href="#information-security">Information Security</a>
-        <a href="#information-law">Information Law</a>
-    </nav>
-    <main>
-        <h2 id="mathematics">Mathematics</h2>
-        <p>Content for Mathematics tab goes here.</p>
-        <h2 id="organization">Organization</h2>
-        <p>Content for Organization tab goes here.</p>
-        <h2 id="python">Python</h2>
-        <p>Content for Python tab goes here.</p>
-        <h2 id="information-security">Information Security</h2>
-        <p>Content for Information Security tab goes here.</p>
-        <h2 id="information-law">Information Law</h2>
-        <p>Content for Information Law tab goes here.</p>
-    </main>
-    <footer>
-        &copy; 2023 Study IT Manager. All rights reserved.
-    </footer>
+    <div class="menu">
+        <a href="mathematics.html">Mathematics</a>
+        <a href="organization.html">Organization</a>
+        <a href="python.html">Python</a>
+        <a href="information-security.html">Information Security</a>
+        <a href="information-law.html">Information Law</a>
+    </div>
+    <div class="content">
+        <!-- content will be displayed here -->
+    </div>
 </body>
 </html>
